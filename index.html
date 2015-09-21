@@ -4,10 +4,12 @@
 		<title>Z&#322;ote Tarasy</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link rel="stylesheet" href="styles/styles.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="scripts/kickstart.js"></script>
+		<link rel="stylesheet" href="styles/kickstart.css" media="all" />
 	</head>
 	<body>
-		<nav class="navbar navbar-inverse">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<a class="navbar-brand" href="#">Z&#322;ote Tarasy</a>
@@ -15,8 +17,8 @@
 				<div>
 					<ul class="nav navbar-nav navbar-right">
 						<li class="active"><a href="#">Home</a></li>
-						<li><a href="#">Page 1</a></li>
 						<li><a href="#about">About</a></li>
+						<li><a href="#menu">Menu</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
@@ -28,42 +30,68 @@
 			</div>
 		</div>
 		<div class="container">
-			<div id="about">
-				<h3>About</h3>
-				<div class="row col-xs-12">
-					Z&#322;ote Tarasy is a brand new Burger King franchisee which offers fresh, flame-broiled burgers
-					conveniently located in downtown Warsaw. For as little as &euro;5, you can get a satisfying meal
-				</div>
+			<div id="about" class="row col-xs-12">
+				<h3 class="text-center">About</h3>
+				Z&#322;ote Tarasy is a brand new Burger King franchisee which offers fresh, flame-broiled burgers
+				conveniently located in downtown Warsaw. For as little as &euro;5, you can get a satisfying meal with
+				a half-litre soda and 2 biscuits. We pride ourselves in providing quality fast-food for people on the
+				move.
 			</div>
-			<div id="contact" >
-				<div class="row">
-					<h3 class="text-center">Contact</h3>
-					<div class="col-xs-4">
-						<form>
-							<fieldset>
-								<legend>Personal Information:</legend>
-								First Name:<br><input type="text" name="firstname" placeholder="First Name"><br>
-								Last Name:<br><input type="text" name="lastname"  placeholder="Last Name"><br>
-								Phone:<br><input type="text" name="phone"  placeholder="71 000 00 00"><br><br>
-								<input type="submit" value="Order">
-							</form>
-						</fieldset>
-					</div>
-					<div class="col-xs-4">
+			<div id="menu" class="row col-xs-12" >
+				<h3 class="text-center">Menu</h3>
+				<table class="tight sortable">
+					<tr>
+						<th>Item</th>
+						<th>Price</th>
+					</tr>
+					<tr>
+						<td>WHOPPER&reg; Sandwich</td>
+						<td>Price</td>
+					</tr>
+					<tr>
+						<td>Item</td>
+						<td>Price</td>
+					</tr>
+					<tr>
+						<td>Item</td>
+						<td>Price</td>
+					</tr>
+					<tr>
+						<td>Item</td>
+						<td>Price</td>
+					</tr>
+				</table>
+			</div>
+			<div id="contact" class="row col-xs-12" >
+				<h3 class="text-center">Contact</h3>
+				<div class="col-xs-4">
+					<form>
 						<fieldset>
-							<legend>Our Address:</legend>
-							Z&#322;ota 59, 00-120 Warszawa, Poland<br>
-							burgerking.com.pl<br>
-							<a href="Z&#322;ota@burgerking.com.pl" >Z&#322;ota@burgerking.com.pl</a><br>
-							+48 71 386 15 88<br>
-							Hours:  9:00 am &mdash; 10:00 pm
-						</fieldset>
-					</div>
-					<div class="col-xs-4">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26856.788709351822!2d21.013657534678735!3d52.236379014368104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc8da58f94ed%3A0x766cd52e04be57f2!2sBurger+King+Z%C5%82ote+Tarasy!5e0!3m2!1sen!2s!4v1442837834594" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-					</div>
+							<legend>Your Information:</legend>
+							First Name:<br><input type="text" name="firstname" placeholder="First Name"><br>
+							Last Name:<br><input type="text" name="lastname"  placeholder="Last Name"><br>
+							Phone:<br><input type="text" name="phone"  placeholder="71 000 00 00"><br><br>
+							<input type="submit" value="Order">
+						</form>
+					</fieldset>
+				</div>
+				<div class="col-xs-4">
+					<fieldset>
+						<legend>Our Address:</legend>
+						Z&#322;ota 59, 00-120 Warszawa, Poland<br>
+						burgerking.com.pl<br>
+						<a href="Z&#322;ota@burgerking.com.pl" >Z&#322;ota@burgerking.com.pl</a><br>
+						+48 71 386 15 88<br>
+						Hours:  9:00 am &mdash; 10:00 pm
+					</fieldset>
+				</div>
+				<div class="col-xs-4">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26856.788709351822!2d21.013657534678735!3d52.236379014368104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc8da58f94ed%3A0x766cd52e04be57f2!2sBurger+King+Z%C5%82ote+Tarasy!5e0!3m2!1sen!2s!4v1442837834594" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 			</div>
+		</div>
+		<div class="footer">
+			<p>Z&#322;ote Tarasy &copy; 2015</p>
 		</div>
 	</body>
 </html>
