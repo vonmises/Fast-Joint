@@ -20,13 +20,10 @@ body{
 }
 
 #about, #menu, #contact{
-	margin-top: 100px;
+	padding-top: 100px;
 }
 
 .footer{
 	text-align: center;
 	background-color: lightgray;
 }
-
-/*
-font-family: 'Poiret One', cursive;*/
