@@ -19,8 +19,8 @@ body{
 	text-shadow: 3px 3px black;
 }
 
-#about, #menu, #contact{
-	padding-top: 100px;
+#about {
+	padding-top: 50px;
 }
 
 .footer{
